@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
