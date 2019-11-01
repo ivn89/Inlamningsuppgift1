@@ -59,13 +59,27 @@ public class Guesser{
    * the player.
    */
   private String getReply(){
-    String reply = null;
     // Write code here which reads a String from the console.
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
-    return reply;
+
+    String reply = null;
+    reply = new Scanner(System.in).nextLine();
+ 
+    while(!reply.equals("T") && !reply.equals("F")){
+          System.out.println("please answer T or F");
+          reply = new Scanner(System.in).nextLine();
+          //read line into reply;    
+           if(reply.equals("")){
+                  System.out.println("reply is empty");
+            }
+           
+        }
+       return reply;
+    
   }
+
 
   private void doGuesses(){
     int i=0; // number of guesses
